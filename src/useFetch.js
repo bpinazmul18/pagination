@@ -16,7 +16,7 @@ export const useFetch = () => {
 
     useEffect(() => {
       getProducts();
-    }, []);
+    }, [data, getProducts]);
   } catch (err) {
     console.log(err.message);
   }

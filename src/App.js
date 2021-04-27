@@ -9,6 +9,7 @@ function App() {
   useEffect(() => {
     if (loading) return;
     setFollowers(data[page]);
+    // eslint-disable-next-line
   }, [loading, page]);
 
   const handlePage = (index) => {
